@@ -101,9 +101,41 @@ h1{
     display:block;
 }
 
+.fade-out{
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(1.08);
+    }
+}
+
 </style>
 
 </head>
+
+<script>
+
+function openInvitation(event){
+
+    event.preventDefault();
+
+    document.querySelector(".container")
+        .classList.add("fade-out");
+
+    setTimeout(() => {
+        window.location.href = "wedding.html";
+    }, 1000);
+}
+
+</script>
 
 <body>
 
@@ -121,14 +153,14 @@ h1{
         Brylle Jhon
     </h1>
 
-    <a href="wedding.html" class="open-link">
+    <a href="#" class="open-link" onclick="openInvitation(event)">
 
     <img src="images/envelope.jpg"
-    style="width:100%;height:n-link">
+    style="width:100%;height:auto;display:block;margin:0 auto;">
 
-    </a>
+</a>
 
-    <a href="wedding.html" class="open-link">
+    <a href="#" class="open-link" onclick="openInvitation(event)">
     <div class="tap">
         Tap to Open
     </div>
