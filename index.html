@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shiela Mae & Brylle Jhon</title>
 
-    <style>
+<title>S & B Wedding</title>
 
-        body{
-            margin:0;
-            font-family:Georgia, serif;
-            background:#F5F1EA;
-        }
+<style>
 
-        .hero{
-            height:100vh;
-            /* background-image:url("images/hero.png"); */
-            background-size:contain;
-            background-repeat:no-repeat;
-            background-position:center;
-
-            display:flex;
-            justify-content:flex-start;
-            align-items:center;
-
-            text-align:center;
-            color:#5E7059;
-        }
-
-        .overlay{
-            background:#DDE5D6;
-            width:100%;
-            height:100%;
-
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
-
-        h1{
-            font-size:90px;
-            margin:0;
-        }
-
-        button{
-    background:#5E7059;
-    color:white;
-    border:none;
-    padding:12px 30px;
-    border-radius:30px;
-    font-size:14px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    margin-top:15px;
+body{
+    margin:0;
+    background:#F5F1EA;
+    font-family:Georgia, serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    text-align:center;
 }
 
-        p{
-            font-size:22px;
-            letter-spacing:4px;
-        }
+.container{
+    width:90%;
+    max-width:500px;
+}
 
-    </style>
+h1{
+    color:#5E7059;
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:0px;
+}
+
+.seal{
+    width:90px;
+    height:90px;
+    background:#7B2D26;
+    border-radius:50%;
+    color:white;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin:auto;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:24px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.tap{
+    color:#5E7059;
+    margin-top:8px;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.envelope{
+    width:100%;
+    max-width:450px;
+    height:260px;
+    background:#A8B493;
+    margin:40px auto;
+    border-radius:8px;
+    position:relative;
+}
+
+.envelope:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    border-left:225px solid transparent;
+    border-right:225px solid transparent;
+    border-top:140px solid #93A07F;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<section class="hero">
+<div class="container">
 
-    <div class="overlay">
+    <h1>
+        Shiela Mae
+        <br>
+        &
+        <br>
+        Brylle Jhon
+    </h1>
 
-        <div>
+    <a href="index.html">
 
-            <div class="hero-content">
+    <img src="images/envelope.jpg"
+     style="width:340px;height:auto;display:block;margin: 0 auto;">
+   
 
-    <div class="hero-text">
-
-        <h1>
-            Shiela Mae
-            <br>
-            &
-            <br>
-            Brylle Jhon
-        </h1>
-
-        <p>
-            We're Getting Married
-        </p>
-
-        <p>
-            January 2027
-        </p>
-        <button>S&B</button>
-
-
+    <div class="tap">
+        Tap the Seal to Open
     </div>
 
-    <div class="hero-photo">
-
-    <img src="images/hero.png" alt="Shiela Mae & Brylle Jhon" style="width:500px; height:auto;">
-
 </div>
-</div>
-
-</div>
-
-        </div>
-
-    </div>
-
-</section>
 
 </body>
 </html>
