@@ -207,6 +207,20 @@
     background:#4d5d49;
 }
 
+.spinning{
+    animation:spinRecord 4s linear infinite;
+}
+
+@keyframes spinRecord{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
     </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -278,9 +292,13 @@
         The Gift - Jim Brickman
     </p>
 
-    <button class="play-song-btn">
+    <button class="play-song-btn" onclick="toggleSong()">
     ▶ Play Our Song
 </button>
+
+<audio id="ourSong">
+
+    <source src="music/the-gift.mp3" type="audio/mpeg">
 
 </div>
 
@@ -369,6 +387,38 @@
     </div>
 
 </section>
+
+<script>
+
+const song = document.getElementById('ourSong');
+
+const vinyl = document.querySelector('.vinyl-record');
+
+const playButton = document.querySelector('.play-song-btn');
+
+function toggleSong(){
+
+    if(song.paused){
+
+        song.play();
+
+        vinyl.classList.add('spinning');
+
+        playButton.innerHTML = '⏸ Pause Our Song';
+
+    }else{
+
+        song.pause();
+
+        vinyl.classList.remove('spinning');
+
+        playButton.innerHTML = '▶ Play Our Song';
+
+    }
+
+}
+
+</script>
 
 </body>
 </html>
