@@ -8,7 +8,7 @@
         body{
             margin:0;
             font-family:Georgia, serif;
-            background:#F5F1EA;
+            background:#DDE5D6;
         }
 
         .hero{
@@ -35,13 +35,30 @@
             justify-content:center;
             align-items:center;
 
-            padding:60px 0;
+            padding:20px;
+            box-sizing:border-box;
         }
 
         h1{
-            font-size:90px;
-            margin:0;
+            font-family:'Cormorant Garamond', serif;
+            font-size:105px;
+            line-height:0.9;
+            margin:0 0 10px 0;
+            font-weight:600;
         }
+
+        .hero-text p:first-of-type{
+        font-size:30px;
+        letter-spacing:3px;
+        text-transform:uppercase;
+        margin-bottom:10px;
+      }
+
+        .hero-text p:last-of-type{
+        font-size:24px;
+        letter-spacing:3px;
+        margin-top:0;
+    }
 
         button{
     background:#5E7059;
@@ -60,7 +77,76 @@
             letter-spacing:4px;
         }
 
+    .our-story{
+    background:#DDE5D6;
+    padding:120px 30px 80px;
+    text-align:center;
+}
+
+.our-story h2{
+    font-size:60px;
+    color:#5E7059;
+    margin-bottom:10px;
+}
+
+.story-intro{
+    max-width:800px;
+    margin:0 auto;
+    color:#6A6A6A;
+    font-size:22px;
+    letter-spacing:1px;
+}
+
+.story-block{
+    max-width:900px;
+    margin:50px auto 0;
+}
+
+.story-block img{
+    width:100%;
+    max-width:800px;
+    border-radius:20px;
+    display:block;
+    margin:0 auto 25px;
+}
+
+.story-block h3{
+    font-size:36px;
+    color:#5E7059;
+    margin-bottom:15px;
+}
+
+.story-block p{
+    max-width:700px;
+    margin:0 auto;
+    line-height:1.8;
+    letter-spacing:1px;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-photo{
+    margin-top:25px;
+}
+
     </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 </head>
 
@@ -70,44 +156,59 @@
 
     <div class="overlay">
 
-        <div>
+        <div class="hero-content">
 
-            <div class="hero-content">
+            <div class="hero-text">
 
-    <div class="hero-text">
+                <h1>
+                    Shiela Mae
+                    <br>
+                    &
+                    <br>
+                    Brylle Jhon
+                </h1>
 
-        <h1>
-            Shiela Mae
-            <br>
-            &
-            <br>
-            Brylle Jhon
-        </h1>
+                <p>
+                    We're Getting Married
+                </p>
 
-        <p>
-            We're Getting Married
-        </p>
+                <p>
+                    January 2027
+                </p>
 
-        <p>
-            January 2027
-        </p>
-        <button>S&B</button>
+            </div>
 
+            <div class="hero-photo">
 
-    </div>
+                <img src="images/hero.png" alt="Shiela Mae & Brylle Jhon">
 
-    <div class="hero-photo">
-
-    <img src="images/hero.png" alt="Shiela Mae & Brylle Jhon" style="width:500px; height:auto;">
-
-</div>
-</div>
-
-</div>
+            </div>
 
         </div>
 
     </div>
+
+</section>
+
+<section class="our-story">
+
+    <h2>Our Story</h2>
+
+    <p class="story-intro">
+        Every love story is beautiful, but ours is our favorite.
+    </p>
+
+    <div class="story-block">
+
+    <img src="images/story-01-beginning.png" alt="The Beginning">
+
+    <h3>The Beginning</h3>
+
+    <p>
+        What started as simple visits to her home slowly became the beginning of something beautiful.
+    </p>
+
+</div>
 
 </section>
 
