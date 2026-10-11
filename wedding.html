@@ -157,6 +157,55 @@
     color:#7A7A7A;
 }
 
+.vinyl-record{
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    #444 0%,
+    #222 45%,
+    #111 70%,
+    #000 100%);
+
+    margin:25px auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    position:relative;
+}
+
+.vinyl-record img{
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid #DDE5D6;
+}
+
+.play-song-btn{
+    background:#5E7059;
+    color:white;
+    border:none;
+    border-radius:30px;
+    padding:12px 25px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:15px;
+    letter-spacing:1px;
+}
+
+.play-song-btn:hover{
+    background:#4d5d49;
+}
 
     </style>
 
@@ -217,13 +266,23 @@
 
     <div class="song-section">
 
-        <h4>♫ Our Song</h4>
+    <h4>♫ Our Song</h4>
 
-        <p class="song-title">
-            The Gift - Jim Brickman
-        </p>
+    <div class="vinyl-record">
+
+        <img src="images/hero.png" alt="Our Song">
 
     </div>
+
+    <p class="song-title">
+        The Gift - Jim Brickman
+    </p>
+
+    <button class="play-song-btn">
+    ▶ Play Our Song
+</button>
+
+</div>
 
     <div class="story-block">
 
